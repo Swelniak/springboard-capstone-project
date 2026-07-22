@@ -12,6 +12,11 @@ The goal of the project is to help users organize their gaming backlog and keep 
 
 This project will use an external video game API for game data and my own backend API for user-specific features such as authentication, saved games, reviews, ratings, and custom game lists.
 
+## Estimated Scope
+
+The minimum viable version of GameLog is designed to be completed within the expected 45-65 hour capstone timeframe. The main focus will be user authentication, searching games through an external API, saving games to a personal list, updating game status, adding ratings/reviews, and displaying a user dashboard.
+
+Stretch goals such as public profiles, following other users, comments, and recommendation features will only be added if the core features are completed first.
 ---
 
 ## Tech Stack
