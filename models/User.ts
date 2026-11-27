@@ -1,5 +1,7 @@
 import mongoose, { Schema, type InferSchemaType, type Model } from "mongoose";
 
+export const USER_ROLES = ["player", "developer", "admin"] as const;
+
 const userSchema = new Schema(
   {
     username: {
@@ -23,6 +25,12 @@ const userSchema = new Schema(
         required: [true, "Password is required"],
         select: false,
     },
+    role: {
+        type: String,
+        enum: { values: USER_ROLES, message: "{VALUE} is not a valid role" },
+        default: "player",
+    },
+    isPublic: { type: Boolean, default: true },
     avatarUrl: { type: String, default:"" },
     bio: {
         type: String,
